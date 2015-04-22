@@ -17,7 +17,18 @@
     "type": "git",
     "url": "git://github.com/tunnckoCore/postcss-myth.git"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "cssnext",
+    "future",
+    "myth",
+    "next",
+    "post",
+    "postcss",
+    "postprocessor",
+    "preprocessor",
+    "processor"
+  ],
   "license": {
     "type": "MIT",
     "url": "https://github.com/tunnckoCore/postcss-myth/blob/master/license.md"
