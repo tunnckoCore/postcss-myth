@@ -1,0 +1,72 @@
+
+body {
+  width: 100px;
+}
+
+p {
+  color: rgb(25, 25, 25);
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 10px) {
+  p {
+    color: rgb(25, 25, 25);
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 30em) {
+  /* narrow window styles */
+}
+
+h2 {
+  -webkit-font-feature-settings: "smcp", "c2sc";
+  -moz-font-feature-settings: "smcp", "c2sc";
+  font-feature-settings: "smcp", "c2sc";
+  font-variant-caps: all-small-caps;
+}
+
+input {
+  background-color: rgba(51,153,255,0.6666666666666666);
+}
+
+html {
+  color: black;
+}
+
+body {
+  color: red;
+}
+
+section {
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+
+@-webkit-keyframes moving-gradient {
+  0% {
+    background-position: left bottom;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+@keyframes moving-gradient {
+  0% {
+    background-position: left bottom;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+* {
+  color: #663399;
+}
+
+body {
+  color: #0F0;
+}

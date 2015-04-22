@@ -1,0 +1,66 @@
+
+body {
+  width: calc(50px * 2);
+}
+
+p {
+  color: color(black tint(10%));
+  background-color: color(rgba(255, 255, 255, .5) alpha(100%));
+}
+
+@media (min-width: 10px) {
+  p {
+    color: color(black tint(10%));
+    background-color: color(rgba(255, 255, 255, .5) alpha(100%));
+  }
+}
+
+@custom-media --narrow-window screen and (max-width: 30em);
+
+@media (--narrow-window) {
+  /* narrow window styles */
+}
+
+h2 {
+  font-variant-caps: all-small-caps;
+}
+
+input {
+  background-color: #39fa;
+}
+
+@import "./test/import.include.css";
+
+body {
+  color: red;
+}
+
+section {
+  transition: transform 1s;
+}
+
+@keyframes moving-gradient {
+  0% {
+    background-position: left bottom;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+* {
+  color: rebeccapurple;
+}
+
+:root {
+  --red: #F00;
+}
+
+body {
+  color: var(--red);
+}
+
+:root {
+  --red: #0F0;
+}
