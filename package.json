@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "description": "PostCSS port of Myth. Support for Myth in PostCSS ecosystem.",
   "scripts": {
-    "lint": "jshint index.js && jscs index.js --reporter inline",
-    "test": "node test",
-    "test-cov": "istanbul cover test",
-    "test-travis": "istanbul cover test --report lcovonly"
+    "test": "standard && node test",
+    "travis": "standard && istanbul cover test --report lcovonly"
   },
   "author": {
     "name": "Charlike Mike Reagent",
@@ -47,6 +45,7 @@
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1"
+    "istanbul": "^0.3.9",
+    "standard": "^3.7.3"
   }
 }

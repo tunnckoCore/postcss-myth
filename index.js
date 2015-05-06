@@ -5,13 +5,13 @@
  * Released under the MIT license.
  */
 
-'use strict';
+'use strict'
 
-var postcss = require('postcss');
+var postcss = require('postcss')
 
-module.exports = function postcssMyth(input, options) {
+module.exports = function postcssMyth (input, options) {
   if (typeof input !== 'string') {
-    throw new TypeError('[postcss-myth] expects `input` to be string');
+    throw new TypeError('[postcss-myth] expects `input` to be string')
   }
   var plugins = [
     require('autoprefixer')(options),
@@ -23,6 +23,6 @@ module.exports = function postcssMyth(input, options) {
     require('postcss-custom-properties')(options),
     require('postcss-font-variant')(options),
     require('postcss-import')(options)
-  ];
-  return postcss(plugins).process(input, options);
-};
+  ]
+  return postcss(plugins).process(input, options)
+}
