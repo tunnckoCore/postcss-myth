@@ -4,7 +4,7 @@
 
 ## Install
 ```
-npm i --save postcss-myth
+npm i postcss-myth --save
 npm test
 ```
 
@@ -19,6 +19,15 @@ var myth = require('postcss-myth')
 // `options` options are passed to postcss and all used plugins
 myth(input, options)
 ```
+
+
+## Related
+- [cssnano](https://github.com/ben-eb/cssnano): A modular minifier, built on top of the PostCSS ecosystem.
+- [cssnext](https://cssnext.github.io/): Use tomorrow's CSS syntax, today
+- [jstransformer-cssnext](https://github.com/jstransformers/jstransformer-cssnext): cssnext support for JS Transformers.
+- [jstransformer](https://github.com/jstransformers/jstransformer): Normalize the API of any jstransformer
+- [myth](https://github.com/segmentio/myth): A CSS preprocessor that acts like a polyfill for future versions of the spec.
+- [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables): PostCSS plugin to transform CSS Custom Properties(CSS variables) syntax into a static representation
 
 
 ## Author
