@@ -13,11 +13,11 @@ npm test
 > For more use-cases see the [tests](./test/index.js)
 
 ```js
-var myth = require('postcss-myth');
+var myth = require('postcss-myth')
 
 // `input` is css input
 // `options` options are passed to postcss and all used plugins
-myth(input, options);
+myth(input, options)
 ```
 
 
